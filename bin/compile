@@ -76,7 +76,7 @@ echo $node_version > $build_dir/.heroku/node-version
 
 mkdir -p $cache_dir/node
 
-$build_dir/scripts/heroku_compile $cache_dir
+$build_dir/scripts/heroku_compile  $build_dir $cache_dir $env_dir
 
 
 # Copy goodies to the cache
